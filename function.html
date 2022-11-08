@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Functions</h2>
+    
+       <p id="demo"></p> 
+        <script>
+            function  addition(a,b){
+                return a+b;
+            }
+            var x=addition(2,4)
+            document.getElementById("demo").innerHTML=x;  
+
+            function Person(name){
+                this.name=name;
+                this.greeting=function(){
+                    console.log(`my name is ${this.name}`);
+                }
+            }
+            let stu=new Person("ramya");
+            stu.greeting();
+        
+            
+
+        </script>
+       
+    </body>
+    </html>
